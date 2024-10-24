@@ -33,19 +33,16 @@ class LLM:
         self.models = {
             "CLAUDE": [
                 ("Claude 3 Opus", "claude-3-opus-20240229"),
-                ("Claude 3 Sonnet", "claude-3-sonnet-20240229"),
+                ("Claude 3.5 Sonnet", "claude-3-5-sonnet-latest"),
                 ("Claude 3 Haiku", "claude-3-haiku-20240307"),
             ],
             "OPENAI": [
                 ("GPT-4o-mini", "gpt-4o-mini"),
-                ("GPT-4o", "gpt-4o"),
-                ("GPT-4 Turbo", "gpt-4-turbo"),
-                ("GPT-3.5 Turbo", "gpt-3.5-turbo-0125"),
+                ("GPT-4o", "chatgpt-4o-latest"),
             ],
             "GOOGLE": [
-                ("Gemini 1.0 Pro", "gemini-pro"),
-                ("Gemini 1.5 Flash", "gemini-1.5-flash"),
-                ("Gemini 1.5 Pro", "gemini-1.5-pro"),
+                ("Gemini 1.5 Flash", "gemini-1.5-flash-latest"),
+                ("Gemini 1.5 Pro", "gemini-1.5-pro-latest"),
             ],
             "MISTRAL": [
                 ("Mistral 7b", "open-mistral-7b"),
