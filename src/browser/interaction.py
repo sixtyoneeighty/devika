@@ -3,7 +3,7 @@
 # natbot.py
 # https://github.com/nat/natbot
 #
-# MODIFIED FOR DEVIKA
+# MODIFIED FOR mojo
 
 from playwright.sync_api import sync_playwright
 import os

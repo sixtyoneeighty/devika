@@ -1,10 +1,10 @@
 <p align="center">
-  <img src=".assets/devika-avatar.png" alt="Devika Logo" width="250">
+  <img src=".assets/mojo-avatar.png" alt="Mojo Logo" width="250">
 </p>
 
-<h1 align="center">🚀 Devika - Agentic AI Software Engineer 👩‍💻</h1>
+<h1 align="center">🚀 Mojo - Agentic AI Software Engineer 👩‍💻</h1>
 
-![devika screenshot](.assets/devika-screenshot.png)
+![mojo screenshot](.assets/mojo-screenshot.png)
 
 > [!IMPORTANT]  
 > This project is currently in a very early development/experimental stage. There are a lot of unimplemented/broken features at the moment. Contributions are welcome to help out with the progress!
@@ -25,16 +25,16 @@
 
 ## About
 
-Devika is an advanced AI software engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve the given objective. Devika utilizes large language models, planning and reasoning algorithms, and web browsing abilities to intelligently develop software.
+Mojo is an advanced AI software engineer that can understand high-level human instructions, break them down into steps, research relevant information, and write code to achieve the given objective. Mojo utilizes large language models, planning and reasoning algorithms, and web browsing abilities to intelligently develop software.
 
-Devika aims to revolutionize the way we build software by providing an AI pair programmer who can take on complex coding tasks with minimal human guidance. Whether you need to create a new feature, fix a bug, or develop an entire project from scratch, Devika is here to assist you.
+Mojo aims to revolutionize the way we build software by providing an AI pair programmer who can take on complex coding tasks with minimal human guidance. Whether you need to create a new feature, fix a bug, or develop an entire project from scratch, Mojo is here to assist you.
 
 > [!NOTE]
-> Devika is modeled after [Devin](https://www.cognition-labs.com/introducing-devin) by Cognition AI. This project aims to be an open-source alternative to Devin with an "overly ambitious" goal to meet the same score as Devin in the [SWE-bench](https://www.swebench.com/) Benchmarks... and eventually beat it?
+> Mojo is modeled after [Devin](https://www.cognition-labs.com/introducing-devin) by Cognition AI. This project aims to be an open-source alternative to Devin with an "overly ambitious" goal to meet the same score as Devin in the [SWE-bench](https://www.swebench.com/) Benchmarks... and eventually beat it?
 
 ## Demos
 
-https://github.com/stitionai/devika/assets/26198477/cfed6945-d53b-4189-9fbe-669690204206
+https://github.com/stitionai/mojo/assets/26198477/cfed6945-d53b-4189-9fbe-669690204206
 
 ## Key Features
 
@@ -71,15 +71,15 @@ Version's requirements
 
 ### Installation
 
-To install Devika, follow these steps:
+To install Mojo, follow these steps:
 
-1. Clone the Devika repository:
+1. Clone the Mojo repository:
    ```bash
-   git clone https://github.com/stitionai/devika.git
+   git clone https://github.com/stitionai/mojo.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd devika
+   cd mojo
    ```
 3. Create a virtual environment and install the required dependencies (you can use any virtual environment manager):
    ```bash
@@ -97,13 +97,13 @@ To install Devika, follow these steps:
    ```bash
    playwright install --with-deps # installs browsers in playwright (and their deps) if required
    ```
-5. Start the Devika server:
+5. Start the Mojo server:
    ```bash
-   python devika.py
+   python mojo.py
    ```
 6. if everything is working fine, you see the following output:
    ```bash
-   root: INFO   : Devika is up and running!
+   root: INFO   : Mojo is up and running!
    ```
 7. Now, for frontend, open a new terminal and navigate to the `ui` directory:
    ```bash
@@ -111,26 +111,26 @@ To install Devika, follow these steps:
    bun install
    bun run start
    ```
-8. Access the Devika web interface by opening a browser and navigating to `http://127.0.0.1:3001`
+8. Access the Mojo web interface by opening a browser and navigating to `http://127.0.0.1:3001`
 
 ### how to use
 
-To start using Devika, follow these steps:
+To start using Mojo, follow these steps:
 
-1. Open the Devika web interface in your browser.
+1. Open the Mojo web interface in your browser.
 2. To create a project, click on 'select project' and then click on 'new project'.
 3. Select the search engine and model configuration for your project.
-4. In the chat interface, provide a high-level objective or task description for Devika to work on.
-5. Devika will process your request, break it down into steps, and start working on the task.
-6. Monitor Devika's progress, view generated code, and provide additional guidance or feedback as needed.
-7. Once Devika completes the task, review the generated code and project files.
+4. In the chat interface, provide a high-level objective or task description for Mojo to work on.
+5. Mojo will process your request, break it down into steps, and start working on the task.
+6. Monitor Mojo's progress, view generated code, and provide additional guidance or feedback as needed.
+7. Once Mojo completes the task, review the generated code and project files.
 8. Iterate and refine the project as desired by providing further instructions or modifications.
 
 ## Configuration
 
-Devika requires certain configuration settings and API keys to function properly:
+Mojo requires certain configuration settings and API keys to function properly:
 
-when you first time run Devika, it will create a `config.toml` file for you in the root directory. You can configure the following settings in the settings page via UI:
+when you first time run Mojo, it will create a `config.toml` file for you in the root directory. You can configure the following settings in the settings page via UI:
 
 - API KEYS
    - `BING`: Your Bing Search API key for web searching capabilities.
@@ -154,30 +154,30 @@ Make sure to keep your API keys secure and do not share them publicly. For setti
 
 ## Contributing
 
-We welcome contributions to enhance Devika's capabilities and improve its performance. To contribute, please see the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for steps.
+We welcome contributions to enhance Mojo's capabilities and improve its performance. To contribute, please see the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for steps.
 
 ## Help and Support
 
-If you have any questions, feedback, or suggestions, please feel free to reach out to us. you can raise an issue in the [issue tracker](https://github.com/stitionai/devika/issues) or join the [discussions](https://github.com/stitionai/devika/discussions) for general discussions.
+If you have any questions, feedback, or suggestions, please feel free to reach out to us. you can raise an issue in the [issue tracker](https://github.com/stitionai/mojo/issues) or join the [discussions](https://github.com/stitionai/mojo/discussions) for general discussions.
 
-We also have a Discord server for the Devika community, where you can connect with other users, share your experiences, ask questions, and collaborate on the project. To join the Devika community Discord server, [click here](https://discord.gg/CYRp43878y).
+We also have a Discord server for the Mojo community, where you can connect with other users, share your experiences, ask questions, and collaborate on the project. To join the Mojo community Discord server, [click here](https://discord.gg/CYRp43878y).
 
 ## License
 
-Devika is released under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE` file for more information.
+Mojo is released under the [MIT License](https://opensource.org/licenses/MIT). See the `LICENSE` file for more information.
 
 ## Star History
 
 <div align="center">
-<a href="https://star-history.com/#stitionai/devika&Date">
+<a href="https://star-history.com/#stitionai/mojo&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=stitionai/devika&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=stitionai/devika&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=stitionai/devika&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=stitionai/mojo&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=stitionai/mojo&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=stitionai/mojo&type=Date" />
  </picture>
 </a>
 </div>
 
 ---
 
-We hope you find Devika to be a valuable tool in your software development journey. If you have any questions, feedback, or suggestions, please don't hesitate to reach out. Happy coding with Devika!
+We hope you find Mojo to be a valuable tool in your software development journey. If you have any questions, feedback, or suggestions, please don't hesitate to reach out. Happy coding with Mojo!

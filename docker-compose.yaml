@@ -14,12 +14,12 @@ services:
       retries: 5
       start_period: 30s
     networks:
-      - devika-subnetwork
+      - mojo-subnetwork
 
-  devika-backend-engine:
+  mojo-backend-engine:
     build:
       context: .
-      dockerfile: devika.dockerfile
+      dockerfile: mojo.dockerfile
     depends_on:
       - ollama-service
     expose:
@@ -35,27 +35,27 @@ services:
       retries: 5
       start_period: 30s
     volumes:
-      - devika-backend-dbstore:/home/nonroot/devika/db
+      - mojo-backend-dbstore:/home/nonroot/mojo/db
     networks:
-      - devika-subnetwork
+      - mojo-subnetwork
 
-  devika-frontend-app:
+  mojo-frontend-app:
     build:
       context: .
       dockerfile: app.dockerfile
       args:
         - VITE_API_BASE_URL=http://127.0.0.1:1337
     depends_on:
-      - devika-backend-engine
+      - mojo-backend-engine
     expose:
       - 3000
     ports:
       - 3000:3000
     networks:
-      - devika-subnetwork
+      - mojo-subnetwork
 
 networks:
-  devika-subnetwork:
+  mojo-subnetwork:
 
 volumes:
-  devika-backend-dbstore:
+  mojo-backend-dbstore:

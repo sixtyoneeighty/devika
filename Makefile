@@ -29,5 +29,5 @@ compose-up: deps compose-down
 	docker-compose up --build
 
 compose-destroy: deps
-	docker images | grep -i devika | awk '{print $$3}' | xargs docker rmi -f
+	docker images | grep -i mojo | awk '{print $$3}' | xargs docker rmi -f
 	docker volume prune
